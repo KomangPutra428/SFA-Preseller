@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_pengaturan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_setting.setting">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/pengaturanBar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Pengaturan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/note"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/note">
+
+            <LinearLayout
+                android:id="@+id/realisasipengiriman"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gambarrealisasipengiriman"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/realisasi_pengiriman" />
+
+                    <TextView
+                        android:text="Realisasi Pengiriman"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/gambarrealisasipengiriman"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+            <LinearLayout
+                android:id="@+id/editposm"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gambareditposm"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/edit_posm" />
+
+                    <TextView
+                        android:text="Edit POSM"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/gambareditposm"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+            <LinearLayout
+                android:id="@+id/informasi_device"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gambarinformasi_device"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/device_information" />
+
+                    <TextView
+                        android:text="Informasi Device"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/gambarinformasi_device"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+            <LinearLayout
+                android:id="@+id/konfigurasi"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gambarkonfigurasi"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/konfigurasi_setting" />
+
+                    <TextView
+                        android:text="Konfigurasi Device"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/gambarkonfigurasi"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+            <LinearLayout
+                android:id="@+id/keluar"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gambarkeluar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/log_out" />
+
+                    <TextView
+                        android:text="Keluar"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/gambarkeluar"
+                        android:textColor="#FF7777"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

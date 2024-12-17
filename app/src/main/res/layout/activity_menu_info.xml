@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_mulai_perjalanan.menu_info">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/pengaturanBar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Info Pelanggan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/note"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/note">
+            <LinearLayout
+                android:id="@+id/info"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/infopelanggan"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/infopelanggan" />
+
+                    <TextView
+                        android:text="Segmen Toko"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/infopelanggan"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+            <LinearLayout
+                android:id="@+id/updateoutlet"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="14dp"
+                android:paddingLeft="14dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/updateoutletgambar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/update_outlet" />
+
+                    <TextView
+                        android:text="Update Outlet"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/updateoutletgambar"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E6E6E6"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/pengaturannavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>

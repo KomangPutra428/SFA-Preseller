@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/dl_persiapan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_mulai_perjalanan.sisa_stock">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/persiapanbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Penjualan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/note"
+            app:cardCornerRadius="0dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#0F4C81"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:title="List Cuti">
+                <ImageView
+                    android:src="@drawable/warning_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Silahkan input sisa stok produk."
+                    android:textSize="14dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_above="@id/linearbutton"
+            android:layout_below="@+id/note"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listid"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/crate"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/namaproduk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:text="Realization"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Qty Stok"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/qtystockminus"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/minus">
+                            </ImageButton>
+
+                            <EditText
+                                android:id="@+id/qtystock"
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textAlignment="center">
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/qtystockadd"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/add">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Qty Display"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/qtydisplayminus"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/minus">
+                            </ImageButton>
+
+                            <EditText
+                                android:id="@+id/qtydisplay"
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textAlignment="center">
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/qtydisplayadd"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/add">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Qty Expired"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/qtyexpiredminus"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/minus">
+                            </ImageButton>
+
+                            <EditText
+                                android:id="@+id/qtyexpired"
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textAlignment="center">
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/qtyexpiredadd"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/add">
+                            </ImageButton>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Tanggal Order"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="#0F4C81"
+                android:layout_below="@+id/username"
+                >
+
+                <EditText
+                    android:id="@+id/tglorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="5dp"
+                    android:focusable="false"
+                    android:longClickable="false"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Pilih Tanggal Order"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearbutton"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:cardElevation="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/selanjutnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Selanjutnya"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

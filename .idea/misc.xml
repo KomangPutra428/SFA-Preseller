@@ -1,0 +1,116 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/button_istirahat.xml" value="0.101" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/button_persiapan.xml" value="0.101" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/crate.xml" value="0.1325" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/editbox.xml" value="0.1325" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/gap_square.xml" value="0.1435" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1615" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/kotak.xml" value="0.1445" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/laporan_penjualan.xml" value="0.121" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/logo_sfa_background.xml" value="0.1205" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/mulai_perjalanan.xml" value="0.12" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/mulai_perjalanan_hitam.xml" value="0.1615" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/outline_shape_green.xml" value="0.2105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/outline_shape_red.xml" value="0.2105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/rounded_corner.xml" value="0.175" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/search.xml" value="0.1615" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/selesai_perjalanan_hitam.xml" value="0.1325" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/warning.xml" value="0.1465" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/drawable/warning_icon.xml" value="0.1465" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_alasan_gagal_checkin.xml" value="0.21" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_biodata.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_callplan.xml" value="0.12545289855072464" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_daftar_kunjungan.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_detail_penjualan.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_detail_selesai.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_detail_survey.xml" value="0.2" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_detailscangagal_dalamrute.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_diskon.xml" value="0.33" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_foto_materi.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_foto_selesai.xml" value="0.2" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_hasil_survei.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_history_posm.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_info_pelanggan.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_input_numberlist.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_input_rak_reguler.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_input_white_chiler.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_konfigurasi_device.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_laporan_penjualan.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_login.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_main.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_menu_pelanggan.xml" value="0.33" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_mulai_perjalanan.xml" value="0.12545289855072464" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_outlet_kritis.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_pengajuan_kredit.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_pengiriman_info.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_posm.xml" value="0.33" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_product_penjualan.xml" value="0.16" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_realisasi_pengiriman.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_scangagal_dalamrute.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_scangagal_luarrute.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_scangagal_map.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_selesai_perjalanan.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_setting.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_sisa_stock.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_splash.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_summary_order.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_summary_penjualan.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_survey_input.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_tambah_survei.xml" value="0.16" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_tentang_perangkat.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/activity_upload_foto_outlet.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/diluarradius.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/gagal_checkin.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/isi_harga.xml" value="0.33" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/kotak.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_answer_survey.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_daftarbelumselesai.xml" value="0.21" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_daftarkunjungan.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_detail_chiller.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_detail_survey.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_group.xml" value="0.33" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_history_penjualan.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_item.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_laporan_penjualan.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_materiposm.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_pengiriman_terakhir.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_penjualan_sub.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_penjualan_sub_2.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_penjualanproduct.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_rute.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_so.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_survey.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_survey_header.xml" value="0.34184397163120567" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_total_detail_penjualan.xml" value="0.15217391304347827" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_total_penjualan.xml" value="0.1480978260869565" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_trend_sub.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/list_uploadfoto.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/pilih_checkin.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/pilih_metode.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/pilih_status_kunjungan.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/popup_selesai_istirahat.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/soal_survey.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/survey_items.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/topup_ditunda.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/topup_istirahat.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/topup_km.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/topup_km_akhir.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/layout/topup_reason.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/menu/top_app_bar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/xml/network_security_config.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/SFA/app/src/main/res/xml/po.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_list_item_1.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_list_item_2.xml" value="0.16485507246376813" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

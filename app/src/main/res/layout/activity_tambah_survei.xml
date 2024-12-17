@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".survei.tambah_survei">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="56dp"
+        android:elevation="2dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/pengaturanBar"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            app:titleTextColor="#212121"
+            android:layout_height="56dp"
+            app:title="Topik Survei"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary">
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Survei"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#0F4C81"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:text="+ Tambah"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_garuda_store"
+        android:layout_below="@+id/linearadd"
+        android:gravity="center"
+        android:visibility="visible"
+        app:cardBackgroundColor="#EDF7FF"
+        android:padding="60dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:strokeColor="#AFC3D5"
+        app:strokeWidth="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+
+            >
+
+            <LinearLayout
+                android:visibility="visible"
+                android:background="#EDF7FF"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/infopelanggan"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/sticky_note" />
+
+                    <TextView
+                        android:id="@+id/card_title_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Topik"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="12dp"
+                        android:textSize="20sp"
+                        android:textColor="#0F4C81"
+                        android:layout_centerVertical="true"
+                        ></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/topik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0F4C81"
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/Keterangan_topik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#616161"
+                        ></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+        android:id="@+id/list_history"
+        android:visibility="gone"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card_garuda_store"/>
+
+    <LinearLayout
+        android:id="@+id/gagal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/card_garuda_store"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/infopelanggan"
+            android:layout_width="280dp"
+            android:layout_height="186.67dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Survei Kosong"
+            android:textAlignment="center"
+            android:textColor="#0F4C81"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Silahkan klik tambah untuk melakukan"
+            android:textAlignment="center"
+            android:textColor="#616161"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="survei baru pelanggan"
+            android:textAlignment="center"
+            android:textColor="#616161"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+

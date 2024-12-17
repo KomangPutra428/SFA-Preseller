@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/dl_persiapan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_selesai_perjalanan.detail_selesai">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/persiapanbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Selesai Perjalanan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ScrollView
+            android:id="@+id/totalpenjualan"
+            android:layout_width="match_parent"
+            android:layout_above="@id/linearbutton"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/targetperformance"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="Target"
+                                android:textStyle="bold"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Galon"
+                                android:textStyle="bold"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="1.200"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="SPS"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="500"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/salesperformance"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/targetperformance"
+                    android:layout_marginBottom="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="Sales Performance"
+                                android:textStyle="bold"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/performance"
+                            android:layout_marginTop="16dp"
+                            android:divider="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RelativeLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Total Produk"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/qty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/aoperformance"
+                    android:layout_below="@+id/salesperformance"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="AO Performance"
+                                android:textStyle="bold"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Target"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/target"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Achivement"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/achivment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Today"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tanggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Total"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/totalperformance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/callperformance"
+                    android:layout_below="@+id/aoperformance"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="Call Performance"
+                                android:textStyle="bold"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Extra Call"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/extracall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="0dp"
+                                android:text="0"
+                                android:textColor="#0F4C81"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="NOO"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/noo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#0F4C81"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="CPR : "
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/cpr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:text="0"
+                                    android:textColor="#0F4C81"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:text=" / "
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/cprtotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="0"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/cprpercent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text=""
+                                android:textColor="#0F4C81"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="ECR : "
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/ecr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:text="0"
+                                    android:textColor="#0F4C81"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:text=" / "
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/ecrtotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="bold"
+                                    android:text="0"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/ecrpercent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text=""
+                                android:textColor="#0F4C81"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearbutton"
+            android:gravity="center"
+            android:visibility="visible"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:cardElevation="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/akhir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Akhiri Kegiatan"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

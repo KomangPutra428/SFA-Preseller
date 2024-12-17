@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".survei.hasil_survei">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/pengaturanBar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#0F4C81"
+                android:layout_height="56dp"
+                app:title="Hasil Survei"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_garuda_store"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:padding="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="328dp"
+                    android:layout_height="280dp"
+                    android:orientation="horizontal"
+                    app:strokeColor="#E0E0E0"
+                    app:strokeWidth="1dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/infopelanggan"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/storefront_black" />
+
+                                <TextView
+                                    android:id="@+id/card_title_header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Anugerah Toko"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="6dp"
+                                    android:textSize="16sp"
+                                    android:textColor="#0F4C81"
+                                    android:layout_centerVertical="true"
+                                    ></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="8dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Waktu &amp; Tanggal Survei"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColor="#616161"
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/card_title_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="05:00:10 • 01 Feb 2023"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold"
+                                    ></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kode Pelanggan"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColor="#616161"
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/card_title_kode_pelanggan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="336-0021928"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold"
+                                    ></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alamat"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="2dp"
+                                    android:textColor="#616161"
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/card_title_alamat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="JAMAKSARI SAMPING KOMPLEK CIPUTAT JL. CIPUNEGARA 13 NO.26, CIPAYUNG, KEC. CIPUTAT, KOTA TANGERANG SELATAN, BANTEN 15411"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold"
+                                    android:lineHeight="20dp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Foto Outlet"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/foto_outlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:layout_below="@+id/fototextoutlet"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/uploadgambar_whitechiller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/outlet_store" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Shop Blind"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/foto_outlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:layout_below="@+id/fototextoutlet"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/uploadgambar_whitechiller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/outlet_store" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Blue Chiller"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/foto_outlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:layout_below="@+id/fototextoutlet"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/uploadgambar_whitechiller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/outlet_store" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="White Chiller"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/foto_outlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:layout_below="@+id/fototextoutlet"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_gambar"
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/uploadgambar_whitechiller"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/outlet_store" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Stock white chiller"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#0A0A0A"
+                        android:textSize="16sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" AQ 600 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" VT 600 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" AQ 1500 ML "
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="5 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" VT 1500 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_vt1500"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE ACTIVE LYCHEE LEMON"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonelychee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE MOOD UP CRANBERRY "
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonecranberry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE BREAK FREE CHERRY BLOSSOM"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizoneblossom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="MIZONE MOVE ON STARFRUIT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonebstarfruit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="LEVITE LEMON CUCUMBER MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitecucumbermint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" LEVITE LYCHEE CITRUS MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitecitrusmint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="LEVITE WILDBERRIES LIME MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitelimemint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rak Reguler"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical"
+
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/foto_outlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:layout_below="@+id/fototextoutlet"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_gambar"
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/uploadgambar_whitechiller"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/outlet_store" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Stock Rak Reguler"
+                        android:textColor="#0A0A0A"
+                        android:textSize="16sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" AQ 600 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" VT 600 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" AQ 1500 ML "
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="5 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" VT 1500 ML"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_vt1500"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE ACTIVE LYCHEE LEMON"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonelychee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE MOOD UP CRANBERRY "
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#E8FFF2"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonecranberry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="10 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#2ECC71"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" MIZONE BREAK FREE CHERRY BLOSSOM"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizoneblossom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="MIZONE MOVE ON STARFRUIT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_mizonebstarfruit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="LEVITE LEMON CUCUMBER MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitecucumbermint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=" LEVITE LYCHEE CITRUS MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitecitrusmint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="LEVITE WILDBERRIES LIME MINT"
+                            android:textColor="#616161"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="3dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="20dp"
+                                app:cardBackgroundColor="#FFF1F1"
+                                app:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txt_whitechiller_total_item_lavitelimemint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineHeight="16dp"
+                                    android:text="0 Item"
+                                    android:textAlignment="center"
+                                    android:textColor="#FB4141"
+                                    android:textSize="12sp"></TextView>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

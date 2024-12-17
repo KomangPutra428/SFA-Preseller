@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_persiapan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_persiapan.outlet_kritis">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/persiapanbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Outlet Kritis"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <SearchView
+            android:id="@+id/caripelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/search"
+            android:iconifiedByDefault="false"
+            android:queryHint="Cari Pelanggan" />
+
+        <ListView
+            android:id="@+id/listoutletkritis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/caripelanggan"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

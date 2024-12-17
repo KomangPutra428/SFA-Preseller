@@ -1,0 +1,44 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0F4C81</item>
+        <item name="colorPrimaryDark">#0F4C81</item>
+        <item name="colorAccent">#0F4C81</item>
+        <item name="android:windowDisablePreview">true</item>
+
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">17sp</item>
+
+    </style>
+
+
+    <style name="ThemeOverlay.BottomNavView" parent="">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorOnSurface">@color/colorAccent</item>
+    </style>
+
+    <style name="abirStyle" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="colorPrimary">#0F4C81</item>
+        <item name="colorPrimaryDark">#0F4C81</item>
+        <item name="colorAccent">#0F4C81</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    <style name="size" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="title" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="content" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

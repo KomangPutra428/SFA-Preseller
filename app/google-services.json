@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "865649509744",
+    "project_id": "sfa-preseller-mobile",
+    "storage_bucket": "sfa-preseller-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865649509744:android:fadf0fe3b63be5606fbbb5",
+        "android_client_info": {
+          "package_name": "com.tvip.sfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865649509744-8if57bml5q2jvb45mrfnhk5qmgntng7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tvip.sfa",
+            "certificate_hash": "a7b91f690b3c3eda09dc528b6ced511a28fe9980"
+          }
+        },
+        {
+          "client_id": "865649509744-nljni3m79s44ckvdk0qgo3gb0j5hp0kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMXwNU8tDGbMxl2O6mvOmJWK8k32Bx638"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865649509744-nljni3m79s44ckvdk0qgo3gb0j5hp0kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/dl_persiapan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_mulai_perjalanan.laporan_penjualan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/persiapanbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="Laporan Penjualan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffff"
+            app:tabGravity="fill"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icon_pelanggan"
+                android:text="Daftar Pelanggan" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/showmap"
+                android:text="Total Penjualan" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ListView
+            android:id="@+id/listlaporanpenjualan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/totalpenjualan"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tablayout"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cart"/>
+                            <TextView
+                                android:text="Summary/SKU"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/summarySKU"
+                            android:layout_marginTop="16dp"
+                            android:divider="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/dotted"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            />
+
+                        <RelativeLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/produk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:textColor="#0F4C81"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Total Produk"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/qty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="0"
+                                android:textColor="#0F4C81"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

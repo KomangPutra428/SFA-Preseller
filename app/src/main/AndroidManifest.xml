@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tvip.sfa" >
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_NETWORK_USAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission
+        android:name="android.permission.UPDATE_DEVICE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.MANAGE_ACCESSIBILITY"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_sfa_fix"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:noHistory="true"
+        android:roundIcon="@drawable/logo_sfa_fix"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Necessary for apps that target Android 9.0 or higher -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.tvip.sfa.menu_mulai_perjalanan.CustomCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/zxing_CaptureTheme"/>
+
+        <activity
+            android:name=".survei.detail_survey"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".survei.input_numberlist"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".survei.hasil_survei"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".survei.input_rak_reguler"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".survei.input_white_chiler"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".survei.upload_foto_outlet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".survei.tambah_survei"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.FotoSelesai"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_setting.realisasi_pengiriman"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.history_posm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.produk_potensial_draft"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.produk_potensial"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pelanggan_baru_pembayaran"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pelanggan_baru_jadwal_kunjungan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pelanggan_baru_pemilik"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pelanggan_baru_alamat_outlet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pelanggan_baru_outlet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_selesai_perjalanan.detail_selesai"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.laporan_penjualan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.diskon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.sisa_stock"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.detail_penjualan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.summary_penjualan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pengiriman_info"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.pengajuan_kredit"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".test" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".menu_mulai_perjalanan.ttd_penjualan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.summary_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.product_penjualan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.kompetitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.survey_input"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.foto_materi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.cek_posm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.materi_posm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.posm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_selesai_perjalanan.selesai_perjalanan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.update_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.info_pelanggan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.menu_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.scangagal_luarrute"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.alasan_gagal_checkin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.scangagal_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.detailscangagal_dalamrute"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.scangagal_dalamrute"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.menu_pelanggan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mulai_perjalanan.mulai_perjalanan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_persiapan.detail_outlet_kritis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_persiapan.map_kunjungan"
+            android:label="@string/title_activity_map_kunjungan" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".menu_persiapan.daftar_kunjungan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_persiapan.outlet_kritis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_persiapan.callplan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_persiapan.persiapan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_setting.konfigurasi_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_setting.tentang_perangkat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_setting.setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_biodata.biodata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_utama.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_login.login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_splash.splash"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Perangkat.MyFirebaseServices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_utama.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/identitylayout"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <ImageButton
+            android:id="@+id/biodata"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biodata_button"/>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/biodata"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Nama User"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_depo"
+                android:singleLine="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Depo"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/setting_button"
+            android:tooltipText="Halo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonslayout1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/identitylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/persiapan"
+            android:layout_width="158dp"
+            android:layout_marginRight="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_persiapan"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/button_persiapan" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Persiapan"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mulaiperjalanan"
+            android:layout_width="158dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_mulaiperjalanan"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/mulai_perjalanan" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Mulai Perjalanan"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonslayout2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/buttonslayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/istirahat"
+            android:layout_width="158dp"
+            android:layout_marginRight="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_istirahat"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/button_istirahat" />
+
+            <TextView
+                android:id="@+id/istirahat_text"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Istirahat"
+                android:layout_marginTop="15dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selesai_perjalanan"
+            android:layout_width="158dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_selesai_perjalanan"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/button_selesai_perjalanan" />
+
+            <TextView
+                android:id="@+id/laporan_cpr"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Selesai Perjalanan"
+                android:layout_marginTop="15dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

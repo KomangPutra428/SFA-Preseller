@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_login.login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineargambar">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logosfa" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="40dp"
+            android:text="Hallo,\nSelamat Datang"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#212121"
+            android:textSize="45dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            android:layout_below="@+id/textView"
+            >
+
+            <EditText
+                android:id="@+id/nikbaru"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="NIK Karyawan"
+                android:singleLine="true"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            app:endIconMode="password_toggle"
+            android:paddingLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            android:layout_below="@+id/username"
+            >
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/password">
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/password"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#0f4c81"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Login"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.943" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tekslupalogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlogin"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:text="Lupa Akun ?"
+            android:textColor="#0F4C81"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lineargambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/logotvipasa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="SFA  © 2021 ICT Department, TVIP" />
+    </LinearLayout>
+</RelativeLayout>
